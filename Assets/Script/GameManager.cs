@@ -79,4 +79,82 @@ public class GameManager : MonoBehaviour
             return 0;
         }
     }
+    public string GetMyBloodType()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyBloodType();
+        }
+        else
+        {
+            return string.Empty;
+        }
+    }
+    public float GetMyEyeSightLeft()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyeyeSightLeft();
+        }
+        else
+        {
+            return 0.0f;
+        }
+    }
+
+    public float GetMyEyeSightRight()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyEyeSightRight();
+        }
+        else
+        {
+            return 0.0f;
+        }
+    }
+    public string GetMyFavoriteFood()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyFavoriteFood();
+        }
+        else
+        {
+            return string.Empty;
+        }
+    }
+    public string GetMyFavoriteGameGenre()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyFavoriteGameGenre();
+        }
+        else
+        {
+            return string.Empty;
+        }
+    }
+    public string GetMyFavoriteColor()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyFavoriteColor();
+        }
+        else
+        {
+            return string.Empty;
+        }
+    }
+    public string GetMyEducation()
+    {
+        if (myInfoClass != null)
+        {
+            return myInfoClass.GetMyEducation();
+        }
+        else
+        {
+            return string.Empty;
+        }
+    }
 }
