@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -21,7 +21,7 @@ public class UpdownGameController : MonoBehaviour
         checkButton.onClick.AddListener(CheckResult);
         checkButton.interactable = false;
         startButton.onClick.AddListener(InitGame);
-        tryText.text = $"½ÃµµÇÑ È½¼ö : {tryCount}";
+        tryText.text = $"ì‹œë„í•œ íšŸìˆ˜ : {tryCount}";
     }
 
     public void CheckResult()
@@ -29,23 +29,23 @@ public class UpdownGameController : MonoBehaviour
         string resultLog = string.Empty;
         int checkValue = int.Parse(inputValue.text);
         tryCount++;
-        tryText.text = $"½ÃµµÇÑ È½¼ö : {tryCount}";
+        tryText.text = $"ì‹œë„í•œ íšŸìˆ˜ : {tryCount}";
         if (checkValue > settingNum)
         {
-            //´Ù¿î
-            resultLog = $"\nÀÔ·ÂÇÑ °ª : {checkValue} / ´Ù¿î!";
+            //ë‹¤ìš´
+            resultLog = $"\nìž…ë ¥í•œ ê°’ : {checkValue} / ë‹¤ìš´!";
             resultText.text = resultText.text + resultLog;
         }
         else if(checkValue < settingNum)
         {
-            //¾÷
-            resultLog = $"\nÀÔ·ÂÇÑ °ª : {checkValue} / ¾÷!";
+            //ì—…
+            resultLog = $"\nìž…ë ¥í•œ ê°’ : {checkValue} / ì—…!";
             resultText.text = resultText.text + resultLog;
         }
         else
         {
-            //Å¬¸®¾î.
-            resultLog = $"\nÀÔ·ÂÇÑ °ª : {checkValue} / Á¤´ä!";
+            //í´ë¦¬ì–´.
+            resultLog = $"\nìž…ë ¥í•œ ê°’ : {checkValue} / ì •ë‹µ!";
             resultText.text = resultText.text + resultLog;
             checkButton.interactable = false;
             startButton.gameObject.SetActive(true);
@@ -60,6 +60,6 @@ public class UpdownGameController : MonoBehaviour
         startButton.gameObject.SetActive(false);
         resultText.text = "";
         tryCount = 0;
-        tryText.text = $"½ÃµµÇÑ È½¼ö : {tryCount}";
+        tryText.text = $"ì‹œë„í•œ íšŸìˆ˜ : {tryCount}";
     }
 }
