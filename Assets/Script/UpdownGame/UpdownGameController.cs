@@ -59,6 +59,7 @@ public class UpdownGameController : MonoBehaviour
         checkButton.interactable = true;
         startButton.gameObject.SetActive(false);
         resultText.text = "";
+        inputValue.text = "";
         tryCount = 0;
         tryText.text = $"시도한 횟수 : {tryCount}";
     }
