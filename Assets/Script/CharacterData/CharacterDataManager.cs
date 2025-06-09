@@ -8,9 +8,9 @@ public class CharacterDataManager
     public List<CharacterData> secondTierCharacterData;
     public List<CharacterData> thirdTierCharacterData;
 
-    [SerializeField] private int firstTierCharCount = 12;
-    [SerializeField] private int secondTierCharCount = 13;
-    [SerializeField] private int thirdTierCharCount = 18;
+    [SerializeField] private int firstTierCharCount = 12; //총 1성 캐릭터 개수, 추가 또는 감소할 경우 해당 값도 변경
+    [SerializeField] private int secondTierCharCount = 13; //총 2성 캐릭터 개수, 추가 또는 감소할 경우 해당 값도 변경
+    [SerializeField] private int thirdTierCharCount = 18; //총 3성 캐릭터 개수, 추가 또는 감소할 경우 해당 값도 변경
     public void Init()
     {
         InitFirstTierCharacterData();
@@ -18,13 +18,13 @@ public class CharacterDataManager
         InitThirdTierCharacterData();
     }
 
-    private void InitFirstTierCharacterData()
+    private void InitFirstTierCharacterData() //1성 캐릭터 데이터 입력
     {
         if(firstTierCharacterData == null || firstTierCharacterData.Count <= 0)
         {
             firstTierCharacterData = new List<CharacterData>(firstTierCharCount);
-            CharacterData charData = new CharacterData();
-            charData.InitData("마리", "Mari", 1);
+            CharacterData charData = new CharacterData();//기존에 저장된 값이 들어가지 않도록 초기화
+            charData.InitData("마리", "Mari", 1);// InitData 안에 캐릭터 명, 이미지 파일 이름, 캐릭터 등급 입력
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
             charData.InitData("세리나", "Serina", 1);
@@ -63,13 +63,13 @@ public class CharacterDataManager
             Debug.Log("1성캐릭터 리스트 초기화 완료");
         }
     }
-    private void InitSecondTierCharacterData()
+    private void InitSecondTierCharacterData() //2성 캐릭터 데이터 등록
     {
         if (secondTierCharacterData == null || secondTierCharacterData.Count <= 0)
         {
             secondTierCharacterData = new List<CharacterData>(secondTierCharCount);
-            CharacterData charData = new CharacterData();
-            charData.InitData("아이리", "Airi", 2);
+            CharacterData charData = new CharacterData(); //기존에 저장된 값이 들어가지 않도록 초기화
+            charData.InitData("아이리", "Airi", 2); // InitData 안에 캐릭터 명, 이미지 파일 이름, 캐릭터 등급 입력
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
             charData.InitData("아카리", "Akari", 2);
@@ -110,12 +110,12 @@ public class CharacterDataManager
             Debug.Log("2성캐릭터 리스트 초기화 완료");
         }
     }
-    private void InitThirdTierCharacterData()
+    private void InitThirdTierCharacterData() //3성 캐릭터 등록
     {
         if (thirdTierCharacterData == null || thirdTierCharacterData.Count <= 0)
         {
-            thirdTierCharacterData = new List<CharacterData>(thirdTierCharCount);
-            CharacterData charData = new CharacterData();
+            thirdTierCharacterData = new List<CharacterData>(thirdTierCharCount);//기존에 저장된 값이 들어가지 않도록 초기화
+            CharacterData charData = new CharacterData();// InitData 안에 캐릭터 명, 이미지 파일 이름, 캐릭터 등급 입력
             charData.InitData("아코", "Ako", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
