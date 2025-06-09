@@ -1,20 +1,20 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class MyInfoClass
 {
     private int myAge = 31;
-    private string myName = "ÀÌ°æ½Ä";
+    private string myName = "ì´ê²½ì‹";
     private string myMBTI = "ISTJ";
     private int myHeight = 178;
     private string myBloodType = "B";
     private float eyeSightLeft = 1.0f;
     private float eyeSightRight = 1.0f;
-    private string favoriteFood = "ÇÇÀÚ";
-    private string myEducation = "´ëÁ¹";
-    private string favoriteGameGenre = "¾×¼Ç, ¼­ºêÄÃÃÄ";
-    private string myfavoriteColor = "°ËÀº»ö";
+    private string favoriteFood = "í”¼ì";
+    private string myEducation = "ëŒ€ì¡¸";
+    private string favoriteGameGenre = "ì•¡ì…˜, ì„œë¸Œì»¬ì³";
+    private string myfavoriteColor = "ê²€ì€ìƒ‰";
     public int GetMyAge() { return myAge; }
     public string GetMyName() { return myName; }
     public string GetMyMBTI() { return myMBTI; }

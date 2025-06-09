@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using TMPro;
@@ -28,7 +28,7 @@ public class SliderController : MonoBehaviour
         {
             curHp = 0;
         }
-        Debug.Log($"µ¥¹ÌÁö : {randomNum} ¹ŞÀ½!");
+        Debug.Log($"ë°ë¯¸ì§€ : {randomNum} ë°›ìŒ!");
         UpdateUI();
     }
 
@@ -40,16 +40,16 @@ public class SliderController : MonoBehaviour
         {
             curHp = maxHp;
         }
-        Debug.Log($"È¸º¹ : {randomNum} È¸º¹!");
+        Debug.Log($"íšŒë³µ : {randomNum} íšŒë³µ!");
         UpdateUI();
     }
 
     public void UpdateUI()
     {
-        float healthPercent = (float)curHp / maxHp; //ÇöÀç Ã¼·Â %·Î °è»ê
-        filledImage.fillAmount = healthPercent; // °è»êÇÑ °ªÀ» ÀÌ¹ÌÁö UI¿¡ Àü´Ş
-        uiSlider.value = healthPercent; // °è»êÇÑ °ªÀ» ÀÌ¹ÌÁö UI¿¡ Àü´Ş
-        sliderText.text = $"{curHp} / {maxHp}"; // Ã¼·Â ¼ıÀÚ UI °»½Å
-        filledText.text = $"{curHp} / {maxHp}"; // Ã¼·Â ¼ıÀÚ UI °»½Å
+        float healthPercent = (float)curHp / maxHp; //í˜„ì¬ ì²´ë ¥ %ë¡œ ê³„ì‚°
+        filledImage.fillAmount = healthPercent; // ê³„ì‚°í•œ ê°’ì„ ì´ë¯¸ì§€ UIì— ì „ë‹¬
+        uiSlider.value = healthPercent; // ê³„ì‚°í•œ ê°’ì„ ì´ë¯¸ì§€ UIì— ì „ë‹¬
+        sliderText.text = $"{curHp} / {maxHp}"; // ì²´ë ¥ ìˆ«ì UI ê°±ì‹ 
+        filledText.text = $"{curHp} / {maxHp}"; // ì²´ë ¥ ìˆ«ì UI ê°±ì‹ 
     }
 }

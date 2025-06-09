@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -30,54 +30,54 @@ public class InfoScript : MonoBehaviour
         educationButton.onClick.AddListener(OnClickEducationButton);
         favoriteGameGenreButton.onClick.AddListener(OnClickMyFavoriteGameGenreButton);
         favoriteColor.onClick.AddListener(OnClickFavoriteColorButton);
-        textLabel.text = "¹«¾ùÀÌ ±Ã±İÇÑ°¡¿ä?";
+        textLabel.text = "ë¬´ì—‡ì´ ê¶ê¸ˆí•œê°€ìš”?";
     }
 
     public void OnClickAgeButton()
     {
-        textLabel.text = $"ÀúÀÇ ³ªÀÌ´Â {GameManager.Instance.GetMyAge()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì €ì˜ ë‚˜ì´ëŠ” {GameManager.Instance.GetMyAge()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickNameButton()
     {
-        textLabel.text = $"ÀúÀÇ ÀÌ¸§Àº {GameManager.Instance.GetMyName()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì €ì˜ ì´ë¦„ì€ {GameManager.Instance.GetMyName()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickHeightButton()
     {
-        textLabel.text = $"ÀúÀÇ Å°´Â {GameManager.Instance.GetMyHeight()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì €ì˜ í‚¤ëŠ” {GameManager.Instance.GetMyHeight()} ì…ë‹ˆë‹¤!";
     }
     public void OnClickMbtiButton()
     {
-        textLabel.text = $"ÀúÀÇ MBTI´Â {GameManager.Instance.GetMyMBTI()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì €ì˜ MBTIëŠ” {GameManager.Instance.GetMyMBTI()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickEyeSightButton()
     {
-        textLabel.text = $"ÀúÀÇ ½Ã·ÂÀº ÁÂ¿ì·Î °¢°¢ {GameManager.Instance.GetMyEyeSightLeft()}, {GameManager.Instance.GetMyEyeSightRight()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì €ì˜ ì‹œë ¥ì€ ì¢Œìš°ë¡œ ê°ê° {GameManager.Instance.GetMyEyeSightLeft()}, {GameManager.Instance.GetMyEyeSightRight()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickFavoriteFoodButton()
     {
-        textLabel.text = $"Á¦°¡ ÁÁ¾ÆÇÏ´Â À½½ÄÀº {GameManager.Instance.GetMyFavoriteFood()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì œê°€ ì¢‹ì•„í•˜ëŠ” ìŒì‹ì€ {GameManager.Instance.GetMyFavoriteFood()} ì…ë‹ˆë‹¤!";
     }
     public void OnClickFavoriteColorButton()
     {
-        textLabel.text = $"Á¦°¡ ÁÁ¾ÆÇÏ´Â »öÀº {GameManager.Instance.GetMyFavoriteColor()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì œê°€ ì¢‹ì•„í•˜ëŠ” ìƒ‰ì€ {GameManager.Instance.GetMyFavoriteColor()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickMyFavoriteGameGenreButton()
     {
-        textLabel.text = $"Á¦°¡ ÁÁ¾ÆÇÏ´Â °ÔÀÓ Àå¸£´Â {GameManager.Instance.GetMyFavoriteGameGenre()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì œê°€ ì¢‹ì•„í•˜ëŠ” ê²Œì„ ì¥ë¥´ëŠ” {GameManager.Instance.GetMyFavoriteGameGenre()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickEducationButton()
     {
-        textLabel.text = $"Á¦ ÃÖÁ¾ ÇĞ·ÂÀº {GameManager.Instance.GetMyEducation()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì œ ìµœì¢… í•™ë ¥ì€ {GameManager.Instance.GetMyEducation()} ì…ë‹ˆë‹¤!";
     }
 
     public void OnClickBloodButton()
     {
-        textLabel.text = $"Á¦ Ç÷¾×ÇüÀº {GameManager.Instance.GetMyBloodType()} ÀÔ´Ï´Ù!";
+        textLabel.text = $"ì œ í˜ˆì•¡í˜•ì€ {GameManager.Instance.GetMyBloodType()} ì…ë‹ˆë‹¤!";
     }
 }

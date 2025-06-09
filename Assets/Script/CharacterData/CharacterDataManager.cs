@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,43 +24,43 @@ public class CharacterDataManager
         {
             firstTierCharacterData = new List<CharacterData>(firstTierCharCount);
             CharacterData charData = new CharacterData();
-            charData.InitData("¸¶¸®", "Mari", 1);
+            charData.InitData("ë§ˆë¦¬", "Mari", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¼¼¸®³ª", "Serina", 1);
+            charData.InitData("ì„¸ë¦¬ë‚˜", "Serina", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("½ºÁî¹Ì", "Suzumi", 1);
+            charData.InitData("ìŠ¤ì¦ˆë¯¸", "Suzumi", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("½Ã¹ÌÄÚ", "Shimiko", 1);
+            charData.InitData("ì‹œë¯¸ì½”", "Shimiko", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¾Æ½º³ª", "Asuna", 1);
+            charData.InitData("ì•„ìŠ¤ë‚˜", "Asuna", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¾ÆÄ«³×", "Akane", 1);
+            charData.InitData("ì•„ì¹´ë„¤", "Akane", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¿ä½Ã¹Ì", "Yoshimi", 1);
+            charData.InitData("ìš”ì‹œë¯¸", "Yoshimi", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÁÖ¸®", "Juri", 1);
+            charData.InitData("ì£¼ë¦¬", "Juri", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("Ä¡³ªÃ÷", "Chinatsu", 1);
+            charData.InitData("ì¹˜ë‚˜ì¸ ", "Chinatsu", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÄÚÅ¸¸¶", "Kotama", 1);
+            charData.InitData("ì½”íƒ€ë§ˆ", "Kotama", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÄÚÅä¸®", "Kotori", 1);
+            charData.InitData("ì½”í† ë¦¬", "Kotori", 1);
             firstTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÇÏ·çÄ«", "Haruka", 1);
+            charData.InitData("í•˜ë£¨ì¹´", "Haruka", 1);
             firstTierCharacterData.Add(charData);
 
-            Debug.Log("1¼ºÄ³¸¯ÅÍ ¸®½ºÆ® ÃÊ±âÈ­ ¿Ï·á");
+            Debug.Log("1ì„±ìºë¦­í„° ë¦¬ìŠ¤íŠ¸ ì´ˆê¸°í™” ì™„ë£Œ");
         }
     }
     private void InitSecondTierCharacterData()
@@ -69,45 +69,45 @@ public class CharacterDataManager
         {
             secondTierCharacterData = new List<CharacterData>(secondTierCharCount);
             CharacterData charData = new CharacterData();
-            charData.InitData("¾ÆÀÌ¸®", "Airi", 2);
+            charData.InitData("ì•„ì´ë¦¬", "Airi", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¾ÆÄ«¸®", "Akari", 2);
+            charData.InitData("ì•„ì¹´ë¦¬", "Akari", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÈÄ¿ìÄ«", "Fuuka", 2);
+            charData.InitData("í›„ìš°ì¹´", "Fuuka", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÇÏ³ª¿¡", "Hanae", 2);
+            charData.InitData("í•˜ë‚˜ì—", "Hanae", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÇÏ³ªÄÚ", "Hanako", 2);
+            charData.InitData("í•˜ë‚˜ì½”", "Hanako", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÇÏ·¹", "Hare", 2);
+            charData.InitData("í•˜ë ˆ", "Hare", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÇÏ½º¹Ì", "Hasumi", 2);
+            charData.InitData("í•˜ìŠ¤ë¯¸", "Hasumi", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÁØÄÚ", "Junko", 2);
+            charData.InitData("ì¤€ì½”", "Junko", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("Ä«¿äÄÚ", "Kayoko", 2);
+            charData.InitData("ì¹´ìš”ì½”", "Kayoko", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¸ğ¸ğÀÌ", "Momoi", 2);
+            charData.InitData("ëª¨ëª¨ì´", "Momoi", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¹«Ã÷Å°", "Mutsuki", 2);
+            charData.InitData("ë¬´ì¸ í‚¤", "Mutsuki", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¿ìÅ¸ÇÏ", "Utaha", 2);
+            charData.InitData("ìš°íƒ€í•˜", "Utaha", 2);
             secondTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("À¯¿ìÄ«", "Yuuka", 2);
+            charData.InitData("ìœ ìš°ì¹´", "Yuuka", 2);
             secondTierCharacterData.Add(charData);
-            Debug.Log("2¼ºÄ³¸¯ÅÍ ¸®½ºÆ® ÃÊ±âÈ­ ¿Ï·á");
+            Debug.Log("2ì„±ìºë¦­í„° ë¦¬ìŠ¤íŠ¸ ì´ˆê¸°í™” ì™„ë£Œ");
         }
     }
     private void InitThirdTierCharacterData()
@@ -116,60 +116,60 @@ public class CharacterDataManager
         {
             thirdTierCharacterData = new List<CharacterData>(thirdTierCharCount);
             CharacterData charData = new CharacterData();
-            charData.InitData("¾ÆÄÚ", "Ako", 3);
+            charData.InitData("ì•„ì½”", "Ako", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¾Æ¸®½º", "Arisu", 3);
+            charData.InitData("ì•„ë¦¬ìŠ¤", "Arisu", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¾Æ·ç", "Aru", 3);
+            charData.InitData("ì•„ë£¨", "Aru", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("Ä¡È÷·Î", "Chihiro", 3);
+            charData.InitData("ì¹˜íˆë¡œ", "Chihiro", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÇÏ·ç³ª", "Haruna", 3);
+            charData.InitData("í•˜ë£¨ë‚˜", "Haruna", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("È÷ºñÅ°", "Hibiki", 3);
+            charData.InitData("íˆë¹„í‚¤", "Hibiki", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("È÷³ª", "Hina", 3);
+            charData.InitData("íˆë‚˜", "Hina", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("È÷³ªÅ¸", "Hinata", 3);
+            charData.InitData("íˆë‚˜íƒ€", "Hinata", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÀÌ¿À¸®", "Iori", 3);
+            charData.InitData("ì´ì˜¤ë¦¬", "Iori", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("ÀÌÁî¹Ì", "Izumi", 3);
+            charData.InitData("ì´ì¦ˆë¯¸", "Izumi", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("Ä«¸°", "Karin", 3);
+            charData.InitData("ì¹´ë¦°", "Karin", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¸¶Å°", "Maki", 3);
+            charData.InitData("ë§ˆí‚¤", "Maki", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¸¶½Ã·Î", "Mashiro", 3);
+            charData.InitData("ë§ˆì‹œë¡œ", "Mashiro", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("¹Ìµµ¸®", "Midori", 3);
+            charData.InitData("ë¯¸ë„ë¦¬", "Midori", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("³ªÃ÷", "Natsu", 3);
+            charData.InitData("ë‚˜ì¸ ", "Natsu", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("³×·ç", "Neru", 3);
+            charData.InitData("ë„¤ë£¨", "Neru", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("Ã÷·ç±â", "Tsurugi", 3);
+            charData.InitData("ì¸ ë£¨ê¸°", "Tsurugi", 3);
             thirdTierCharacterData.Add(charData);
             charData = new CharacterData();
-            charData.InitData("À¯Áî", "Yuzu", 3);
+            charData.InitData("ìœ ì¦ˆ", "Yuzu", 3);
             thirdTierCharacterData.Add(charData);
-            Debug.Log("3¼ºÄ³¸¯ÅÍ ¸®½ºÆ® ÃÊ±âÈ­ ¿Ï·á");
+            Debug.Log("3ì„±ìºë¦­í„° ë¦¬ìŠ¤íŠ¸ ì´ˆê¸°í™” ì™„ë£Œ");
         }
     }
 
@@ -178,7 +178,7 @@ public class CharacterDataManager
         int randNum = Random.Range(0, firstTierCharacterData.Count);
         if (firstTierCharacterData[randNum] != null)
         {
-            Debug.Log("°á°ú°ª : " + firstTierCharacterData[randNum].charName);
+            Debug.Log("ê²°ê³¼ê°’ : " + firstTierCharacterData[randNum].charName);
             return firstTierCharacterData[randNum];
         }
         else
@@ -191,7 +191,7 @@ public class CharacterDataManager
         int randNum = Random.Range(0, secondTierCharacterData.Count);
         if (secondTierCharacterData[randNum] != null)
         {
-            Debug.Log("°á°ú°ª : " + secondTierCharacterData[randNum].charName);
+            Debug.Log("ê²°ê³¼ê°’ : " + secondTierCharacterData[randNum].charName);
             return secondTierCharacterData[randNum];
         }
         else
@@ -204,7 +204,7 @@ public class CharacterDataManager
         int randNum = Random.Range(0, thirdTierCharacterData.Count);
         if (thirdTierCharacterData[randNum] != null)
         {
-            Debug.Log("°á°ú°ª : " + thirdTierCharacterData[randNum].charName);
+            Debug.Log("ê²°ê³¼ê°’ : " + thirdTierCharacterData[randNum].charName);
             return thirdTierCharacterData[randNum];
         }
         else

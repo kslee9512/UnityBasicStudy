@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using TMPro.EditorUtilities;
@@ -7,17 +7,17 @@ using UnityEngine.UI;
 
 public class InputTextController : MonoBehaviour
 {
-    [SerializeField] TMP_InputField inputText; // »ç¿ëÀÚ°¡ ÀÔ·ÂÇÑ ÅØ½ºÆ®
-    [SerializeField] TextMeshProUGUI printText; // ÅØ½ºÆ®¸¦ Ãâ·ÂÇÒ ¿ÀºêÁ§Æ®
-    [SerializeField] Button inputButton; //¹öÆ°
+    [SerializeField] TMP_InputField inputText; // ì‚¬ìš©ìê°€ ì…ë ¥í•œ í…ìŠ¤íŠ¸
+    [SerializeField] TextMeshProUGUI printText; // í…ìŠ¤íŠ¸ë¥¼ ì¶œë ¥í•  ì˜¤ë¸Œì íŠ¸
+    [SerializeField] Button inputButton; //ë²„íŠ¼
 
     private void Awake()
     {
-        inputButton.onClick.AddListener(ChangeTextLabel); // OnClick¿¡ ±â´É Àû¿ë.
+        inputButton.onClick.AddListener(ChangeTextLabel); // OnClickì— ê¸°ëŠ¥ ì ìš©.
     }
 
     public void ChangeTextLabel()
     {
-        printText.text = inputText.text; // inputField¿¡ ÀÔ·ÂµÈ Text¸¦ Ãâ·ÂÇÒ ÅØ½ºÆ®¿¡ Áı¾î³Ö¾î¶ó.
+        printText.text = inputText.text; // inputFieldì— ì…ë ¥ëœ Textë¥¼ ì¶œë ¥í•  í…ìŠ¤íŠ¸ì— ì§‘ì–´ë„£ì–´ë¼.
     }
 }
