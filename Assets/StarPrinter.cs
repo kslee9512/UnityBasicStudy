@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -16,6 +16,7 @@ public class StarPrinter : MonoBehaviour
         phaseButton[2].onClick.AddListener(Phase3);
         phaseButton[3].onClick.AddListener(Phase4);
         phaseButton[4].onClick.AddListener(Phase5);
+        phaseButton[5].onClick.AddListener(Phase6);
     }
     public void Phase1()
     {
@@ -24,10 +25,11 @@ public class StarPrinter : MonoBehaviour
         {
             for(int j = 0; j < i + 1; j++)
             {
-                text += "¡Ú ";
+                text += "â˜… ";
             }
             text += "\n";
         }
+        textLabel.GetComponent<RectTransform>().localEulerAngles = Vector3.zero;
         textLabel.alignment = TextAlignmentOptions.Left;
         textLabel.text = text;  
     }
@@ -37,12 +39,17 @@ public class StarPrinter : MonoBehaviour
         string text = string.Empty;
         for (int i = 0; i < 5; i++)
         {
-            for (int j = 4; j > i - 1; j--)
+            for (int j = 0; j < i + 1; j++)
             {
-                text += "¡Ú ";
+                text += "   ";
+            }
+            for (int j = 0; j < 5 - i; j++)
+            {
+                text += "â˜…";
             }
             text += "\n";
         }
+        textLabel.GetComponent<RectTransform>().localEulerAngles = Vector3.zero;
         textLabel.alignment = TextAlignmentOptions.Left;
         textLabel.text = text;
     }
@@ -55,18 +62,19 @@ public class StarPrinter : MonoBehaviour
             {
                 for (int j = 0; j < i + 1; j++)
                 {
-                    text += "¡Ú ";
+                    text += "â˜… ";
                 }
             }
             else
             {
                 for(int j = 0; j < 9 - i; j++)
                 {
-                    text += "¡Ú ";
+                    text += "â˜… ";
                 }
             }
             text += "\n";
         }
+        textLabel.GetComponent<RectTransform>().localEulerAngles = Vector3.zero;
         textLabel.alignment = TextAlignmentOptions.Left;
         textLabel.text = text;
     }
@@ -83,7 +91,7 @@ public class StarPrinter : MonoBehaviour
                 }
                 for(int j = 0; j < i + 1; j++)
                 {
-                    text += "¡Ú";
+                    text += "â˜…";
                 }
             }
             else
@@ -94,11 +102,12 @@ public class StarPrinter : MonoBehaviour
                 }
                 for(int j = 0; j < 9 - i; j++)
                 {
-                    text += "¡Ú";
+                    text += "â˜…";
                 }
             }
             text += "\n";
         }
+        textLabel.GetComponent<RectTransform>().localEulerAngles = Vector3.zero;
         textLabel.alignment = TextAlignmentOptions.Left;
         textLabel.text = text;
     }
@@ -111,19 +120,45 @@ public class StarPrinter : MonoBehaviour
             {
                 for (int j = 0; j < (2 * i) + 1; j++)
                 {
-                    text += "¡Ú ";
+                    text += "â˜… ";
                 }
             }
             else
             {
                 for(int j = 0; j < 17 - (2 * i); j++)
                 {
-                    text += "¡Ú ";
+                    text += "â˜… ";
+                }
+            }
+            text += "\n";
+        }
+        textLabel.GetComponent<RectTransform>().localEulerAngles = Vector3.zero;
+        textLabel.alignment = TextAlignmentOptions.Center;
+        textLabel.text = text;
+    }
+    public void Phase6()
+    {
+        string text = string.Empty;
+        for (int i = 0; i < 9; i++)
+        {
+            if (i < 5)
+            {
+                for (int j = 0; j < (2 * i) + 1; j++)
+                {
+                    text += "â˜… ";
+                }
+            }
+            else
+            {
+                for (int j = 0; j < 17 - (2 * i); j++)
+                {
+                    text += "â˜… ";
                 }
             }
             text += "\n";
         }
         textLabel.alignment = TextAlignmentOptions.Center;
         textLabel.text = text;
+        textLabel.GetComponent<RectTransform>().localEulerAngles = new Vector3(0f, 0f, 15f);
     }
 }
